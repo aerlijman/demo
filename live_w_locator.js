@@ -229,10 +229,11 @@ $(function() {
         },
         state: {
             inputStream: {
-                type : "LiveStream",
+                type: "LiveStream",
+                singleChannel: true,
                 constraints: {
-                    width: {min: 800},
-                    height: {min: 600},
+                    width: {min: 640},
+                    height: {min: 480},
                     facingMode: "environment",
                     aspectRatio: {min: 1, max: 2}
                 }

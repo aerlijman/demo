@@ -208,6 +208,7 @@ $(function() {
             numOfWorkers: function(value) {
                 return parseInt(value);
             },
+            debug: true,
             decoder: {
                 readers: function(value) {
                     if (value === 'ean_extended') {
@@ -248,7 +249,13 @@ $(function() {
                 readers : [{
                     format: "code_128_reader",
                     config: {}
-                }]
+                }],
+                debug: {
+                    drawBoundingBox: false,
+                    showFrequency: false,
+                    drawScanline: false,
+                    showPattern: false
+                }
             },
             locate: false
         },

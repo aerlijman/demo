@@ -231,17 +231,17 @@ $(function() {
             inputStream: {
                 type : "LiveStream",
                 constraints: {
-                    width: {min: 800},
-                    height: {min: 600},
+                    width: {min: 640},
+                    height: {min: 480},
                     facingMode: "environment",
                     aspectRatio: {min: 1, max: 2}
                 }
             },
             locator: {
-                patchSize: "small",
-                halfSample: false
+                patchSize: "medium",
+                halfSample: true
             },
-            numOfWorkers: 1,
+            numOfWorkers: 2,
             frequency: 10,
             decoder: {
                 readers : [{
@@ -249,7 +249,7 @@ $(function() {
                     config: {}
                 }]
             },
-            locate: false
+            locate: true
         },
         lastResult : null
     };

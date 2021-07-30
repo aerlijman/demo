@@ -238,7 +238,7 @@ $(function() {
                 }
             },
             locator: {
-                patchSize: "medium",
+                patchSize: "small",
                 halfSample: false
             },
             numOfWorkers: 1,

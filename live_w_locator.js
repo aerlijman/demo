@@ -249,7 +249,7 @@ $(function() {
                     config: {}
                 }]
             },
-            locate: true
+            locate: false
         },
         lastResult : null
     };
